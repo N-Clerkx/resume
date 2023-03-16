@@ -108,7 +108,7 @@ let profilePicture = document.getElementById('pf')
 // Html2pdf options
 var opt = {
     margin:       0,
-    filename:     'CV_JelleVanMiltenburg.pdf',
+    filename:     'CV_NathanClerkx.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4, scrollY: 0 },
     jsPDF:        { format: 'letter', orientation: 'portrait' }
@@ -132,14 +132,14 @@ resumeButton.addEventListener('click', () =>{
 
     
     // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
+    swapId('dataengineering', 'wdataengineering')
+    swapId('datascience','wdatascience')
+    swapId('backend', 'wbackend')
+    swapId('cicd', 'wcicd')
+    swapId('cloudinfra', 'wcloudinfra')
     swapId('python', 'wpython')
-    swapId('scala','wscala')
-    swapId('excel', 'wexcel')
-    swapId('bidevelopment', 'wbidevelopment')
-    swapId('productmanagement', 'wproductmanagement')
-    swapId('presenting', 'wpresenting')
-    swapId('humor', 'whumor')
-    swapId('analytics', 'wanalytics')
+    swapId('sql', 'wsql')
+    swapId('kafka', 'wkafka')
 
     scaleCv()
     // swapClass('python', 'wpython')
